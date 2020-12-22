@@ -40,11 +40,11 @@ namespace ElcomPlus.TestTask
                 return;
             }
 
-            var (maxValue, maxCount) = countByValue
+            var (maxCountValue, maxCount) = countByValue
                 .OrderByDescending(pair => pair.Value)
                 .First();
 
-            Console.WriteLine($"{maxValue} ({maxCount})");
+            Console.WriteLine($"{maxCountValue} ({maxCount})");
         }
     }
 }
